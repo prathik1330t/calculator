@@ -1,13 +1,10 @@
 from calculator import sum
 
-def test_add():
-    assert sum(10,5)==15
 
-def test_sub():
-    assert sum(10,5)==5
+def test_all_operations():
+    add, sub, mul, div = sum(10, 5)
 
-def test_mul():
-    assert sum(10,5)==50
-
-def test_div():
-    assert sum(10,5)==2
+    assert add == 15
+    assert sub == 5
+    assert mul == 50
+    assert div == 2
